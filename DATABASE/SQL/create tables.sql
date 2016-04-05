@@ -57,9 +57,10 @@ CREATE TABLE customer_hist (
     prod_id integer NOT NULL
 );
 
-DROP TABLE customer;
-DROP TABLE inventory;
-DROP TABLE orderlines;
-DROP TABLE orders;
-DROP TABLE products;
-DROP TABLE customer_hist;
+CREATE TABLE dates(
+	date_id integer NOT NULL,
+	date DATE
+);
+
+
+
