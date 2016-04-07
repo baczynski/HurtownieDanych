@@ -59,7 +59,9 @@ CREATE TABLE customer_hist (
 
 CREATE TABLE dates(
 	date_id integer NOT NULL,
-	date DATE
+	day integer,
+	month integer,
+	year integer
 );
 
 

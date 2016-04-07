@@ -14,7 +14,7 @@ public class GenerateDates {
 
         GenerateDates g = new GenerateDates();
 
-        g.generateDates("insertion_dates.txt","dates",2004,1,1,2004,12,31);
+        g.generateDates("insertion_dates.txt","dates",2004,0,1,2004,11,31);
 
     }
 
@@ -40,7 +40,15 @@ public class GenerateDates {
                 sb.append("'");
                 sb.append(",");
                 sb.append("'");
-                sb.append(new SimpleDateFormat("yyyy-MM-dd").format(startD.getTime()));
+                sb.append(startD.get(Calendar.DAY_OF_MONTH));
+                sb.append("'");
+                sb.append(",");
+                sb.append("'");
+                sb.append(startD.get((Calendar.MONTH))+1);
+                sb.append("'");
+                sb.append(",");
+                sb.append("'");
+                sb.append(startD.get(Calendar.YEAR));
                 sb.append("'");
                 sb.append(")");
                 sb.append(System.lineSeparator());
