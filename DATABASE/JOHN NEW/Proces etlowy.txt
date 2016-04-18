@@ -1,0 +1,26 @@
+SSIS
+
+1. Data Conversion - ¿eby zmodyfikowaæ typ ze Ÿród³a na dalej
+2. Lookup - mamy dane, referencje i tabelê referencyjna (np. id miasta -> nazwa miasta podmieniæ) [mo¿na zrobiæ tabelê referencyjn¹ z cash connection ustawiæ w lookupie] (bez uaktualnieñ - full cache, z uaktualnieniami - czêœciowy cache)
+3. derived column (nowa kolumna która ma byæ do³¹czona / wyliczana na podstawie wartoœæi w istniej¹cych kolumnach)
+4. sort (hehe) USUWA DUPLIKATY!
+_____________- rozdzielanie
+5. Multicast - (rozdzielamy dane na wiele krawêdzi i do ka¿dego leci wszystko (wiersze) ze œrodka)
+6. conditional split - (rozdziela dane, wg zdefiniowanych przez nas warunków ~~> default (¿aden) a potem lista warunków i jeœli coœ jest spe³nione to tam leco dane XD )
+_____________- z³¹czenia
+7. Union All [UNION ALL - mo¿e wejœæ wiele danych np z ró¿nych Ÿróde³ dane odczytywane, jakby to by³y ró¿nie nazywane kolumny mo¿na mapowaæ]
+			/ MERGE -  [tylko dwa Ÿród³a, przeplatanie danych
+8. Merge join - [taki bazodanowy join /left/right/inner]
+_____________-
+9. Execute SQL task
+
+
+trzeba: 
+
+	zaprojektowaæ proces etlowy który stworzy strukturê w systemie zarz. baz danych, zgodnie ze struktur¹ itd pierdu pierdu, pod k¹tem zastosowañ analitycznych -> tabela faktów itd -> uzupe³niæ danymi ze Ÿród³a
+	 mo¿e siê przydaæ -> na polu control flow -> execute sql task na wskazanej bazie
+
+		ewentualnie drop table na starcie
+		pamiêtaæ o referencjach
+
+	

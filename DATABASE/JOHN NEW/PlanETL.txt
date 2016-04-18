@@ -1,0 +1,12 @@
+orderlines.orderdateid - wywnioskowaæ(zmapowaæ) na podstawie:
+	orderlines.orderdateid = date_id takie, 
+			¿e dla niego day = orderlines -> (old)orders.date.getDAY
+		i 		month = orderlines -> (old)orders.date.getMONTH
+		i 		year = orderlines -> (old)orders.date.getYEAR
+TODO:	tak samo orders.orderdateid 
+
+orderlines.customerid - wywnioskowaæ(zmapowaæ) na podstawie:
+	orderlines.customerid = orderlines -> orders.customerid
+		
+
+poprawiæ sqle tworzace baze  docelowa!~:)
