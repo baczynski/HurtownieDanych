@@ -1,0 +1,21 @@
+if(i==17){
+                            int n = Integer.parseInt(values[i]);
+                            if(n>75){
+                                sb.append(90-n+20);
+                            }
+                            else{
+                                sb.append(values[i]);
+                            }
+                        }
+                        else if(i==19){
+
+                            if(r.nextDouble()>0.70){
+                                sb.append('M');
+                            }
+                            else{
+                                sb.append(values[i]);
+                            }
+                        }
+                        else{
+                            sb.append(values[i]);
+                        }

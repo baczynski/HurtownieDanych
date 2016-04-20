@@ -1,7 +1,8 @@
 
-DROP TABLE customer;
+
 DROP TABLE orderlines;
 DROP TABLE orders;
+DROP TABLE customer;
 DROP TABLE products;
 DROP TABLE dates;
 
@@ -33,7 +34,7 @@ CREATE TABLE orderlines (
     prod_id integer NOT NULL,
     quantity smallint NOT NULL,
     orderdateid integer NOT NULL,
-		DODAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAÆ customerid
+	customerid integer NOT NULL
 );
 
 CREATE TABLE orders (
@@ -71,21 +72,22 @@ ALTER TABLE orders
 ALTER TABLE products
 	ADD CONSTRAINT PK_products PRIMARY KEY(prod_id);
 
-	
+ALTER TABLE dates
+	ADD CONSTRAINT PK_dates PRIMARY KEY (date_id);
 
 ALTER TABLE orderlines
 	ADD CONSTRAINT FK_orderlines1 FOREIGN KEY (orderid) REFERENCES orders (orderid),
 	CONSTRAINT FK_orderlines2 FOREIGN KEY (prod_id) REFERENCES products (prod_id),
 	CONSTRAINT PK_orderlines PRIMARY KEY (orderlineid, orderid, prod_id),
-	CONSTRAINT FK_orders_dates FOREIGN KEY (orderdateid) REFERENCES dates (date_id);
+	CONSTRAINT FK_orderlines3 FOREIGN KEY (customerid) REFERENCES customer (customerid),
+	CONSTRAINT FK_orders_dates1 FOREIGN KEY (orderdateid) REFERENCES dates (date_id);
 
 ALTER TABLE orders
 	ADD CONSTRAINT FK_orders_customer FOREIGN KEY (customerid) REFERENCES customer (customerid),
 	CONSTRAINT FK_orders_dates FOREIGN KEY (orderdateid) REFERENCES dates (date_id);
 	
 
-ALTER TABLE dates
-	ADD CONSTRAINT PK_dates PRIMARY KEY (date_id);
+
 
 
 
