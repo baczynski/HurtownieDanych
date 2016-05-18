@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2137" scrolltop="-5966" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7964" y="16933" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2137" scrolltop="-5966" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7964" y="12462" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="customer" left="126" top="-2434" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="customer" left="126" top="-2434" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000c0000430e000088130000" />
             </control>
@@ -64,6 +64,48 @@
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="153">
+            <Shape Id="Customerid" Expanded="false">
+              <Attributes>
+                <Attribute Id="Customerid" />
+                <Attribute Id="Address1" />
+                <Attribute Id="Address2" />
+                <Attribute Id="Age" />
+                <Attribute Id="Creditcard" />
+                <Attribute Id="Creditcardexpiration" />
+                <Attribute Id="Creditcardtype" />
+                <Attribute Id="Email" />
+                <Attribute Id="Firstname" />
+                <Attribute Id="Gender" />
+                <Attribute Id="Income" />
+                <Attribute Id="Lastname" />
+                <Attribute Id="Phone" />
+                <Attribute Id="Region" />
+                <Attribute Id="State" />
+                <Attribute Id="Zip" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Country" Expanded="false">
+              <Attributes>
+                <Attribute Id="Country" />
+              </Attributes>
+              <Position x="412" y="20" />
+            </Shape>
+            <Shape Id="City" Expanded="false">
+              <Attributes>
+                <Attribute Id="City" />
+              </Attributes>
+              <Position x="216" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -110,10 +152,6 @@
           <AttributeID>Address2</AttributeID>
           <Name>Address2</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="babd2538-5aa4-47ca-b549-fa0526dd43c4">
-          <AttributeID>City</AttributeID>
-          <Name>City</Name>
-        </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="1b65cfdd-4063-41bc-928f-c389006a6763">
           <AttributeID>State</AttributeID>
           <Name>State</Name>
@@ -121,10 +159,6 @@
         <AttributeRelationship dwd:design-time-name="6b3fdfac-3cb9-4412-a122-40993740f92f">
           <AttributeID>Zip</AttributeID>
           <Name>Zip</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d7e4b731-35b6-46c4-9118-1e2d1bb116c0">
-          <AttributeID>Country</AttributeID>
-          <Name>Country</Name>
         </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="c64d76a3-bbca-4f87-9841-305ab9c4cdb6">
           <AttributeID>Region</AttributeID>
@@ -161,6 +195,14 @@
         <AttributeRelationship dwd:design-time-name="818ad9a7-347e-46d4-9204-f8d8761f4b91">
           <AttributeID>Gender</AttributeID>
           <Name>Gender</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d2469d2-2a75-498c-b48d-de65e6dad0d0">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6da6958c-16fc-49ce-a921-27bfbc865594">
+          <AttributeID>Country</AttributeID>
+          <Name>Country</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -244,6 +286,12 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d493102a-4d28-43b1-8b7b-da1c1ea621b4">
+          <AttributeID>Country</AttributeID>
+          <Name>Country</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -436,14 +484,19 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="427e3030-ca6f-419d-9825-39e05d426d93">
-      <ID>Hierarchy</ID>
-      <Name>Hierarchy</Name>
+    <Hierarchy dwd:design-time-name="f8234b4e-e561-4793-8249-66f8f83cbefb">
+      <ID>Hierarchy 1</ID>
+      <Name>Lokalizacja</Name>
       <Levels>
-        <Level dwd:design-time-name="cf444f91-ab7e-46da-a53f-0701aab6872e">
-          <ID>Customerid</ID>
-          <Name>Customerid</Name>
-          <SourceAttributeID>Customerid</SourceAttributeID>
+        <Level dwd:design-time-name="98d3d2af-9bd6-4f81-8c1a-8dc039fc4c47">
+          <ID>Country</ID>
+          <Name>Country</Name>
+          <SourceAttributeID>Country</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="843d5fa3-c2d8-4dab-8e02-59a757d2d400">
+          <ID>City</ID>
+          <Name>City</Name>
+          <SourceAttributeID>City</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

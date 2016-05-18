@@ -12,6 +12,9 @@
     </DataSources>
     <Dimensions>
       <Dimension>
+        <ID>Customer</ID>
+      </Dimension>
+      <Dimension>
         <ID>Products</ID>
       </Dimension>
       <Dimension>
@@ -20,51 +23,16 @@
       <Dimension>
         <ID>Dates</ID>
       </Dimension>
-      <Dimension>
-        <ID>Customer</ID>
-      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
         <ID>Hurtownie Danych20 04</ID>
         <MeasureGroups>
           <MeasureGroup>
-            <ID>Customer</ID>
-            <Partitions>
-              <Partition>
-                <ID>Customer</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Products</ID>
-            <Partitions>
-              <Partition>
-                <ID>Products</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Orders</ID>
-            <Partitions>
-              <Partition>
-                <ID>Orders</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
             <ID>Orderlines</ID>
             <Partitions>
               <Partition>
                 <ID>Orderlines</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dates</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dates</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

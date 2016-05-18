@@ -33,6 +33,13 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wdYNo9AvRIExp90WAJJ53FTsi9k=05.05.2016 10:19:5905.05.2016 09:56:59</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
         <TimeStamp>klKWFNCEP3w5MmU4ujXvn2G6axE=05.05.2016 10:19:5905.05.2016 09:56:59</TimeStamp>
         <ID>
           <String>Products</String>
@@ -53,15 +60,8 @@
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>wdYNo9AvRIExp90WAJJ53FTsi9k=05.05.2016 10:19:5905.05.2016 09:56:59</TimeStamp>
-        <ID>
-          <String>Customer</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>JELqeuMgm46F7oVyyfZqmMLlUm0=05.05.2016 10:45:5805.05.2016 09:56:58rMKp+0lkx4BneZNIwArWoYFEw2E=05.05.2016 10:35:3705.05.2016 09:56:59</TimeStamp>
+        <TimeStamp>QiXz6wJap4JxiPtuBheRkdYXUFY=17.05.2016 18:15:3105.05.2016 09:56:58HhL8LIhgmPYmO1/YcJmDp3JSfuw=17.05.2016 17:59:1305.05.2016 09:56:59</TimeStamp>
         <ID>
           <String>Hurtownie Danych20 04</String>
         </ID>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2016-05-05T08:52:12.156667Z</LastDeployed>
+  <LastDeployed>2016-05-17T16:15:34.726667Z</LastDeployed>
 </DeploymentSnapshot>

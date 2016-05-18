@@ -2,66 +2,6 @@
   <ID>Hurtownie Danych20 04</ID>
   <MeasureGroups>
     <MeasureGroup>
-      <ID>Customer</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="34685ce3-d14d-4f23-9081-c4deaf34d4e9">
-          <ID>Customer</ID>
-          <Name>Customer</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="beecf7d3-9d7d-49b1-8e64-8f873029f072">
-            <DataSourceViewID>Hurtownie Danych20 04</DataSourceViewID>
-            <TableID>dbo_customer</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>Products</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="e98cfee7-8af0-4de7-a11c-652773b6cb9b">
-          <ID>Products</ID>
-          <Name>Products</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f94b2aa1-a26c-4e31-aac7-6b8338030eb0">
-            <DataSourceViewID>Hurtownie Danych20 04</DataSourceViewID>
-            <TableID>dbo_products</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>Orders</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="e49a9e4c-3c2e-45e7-9604-9310e5e2824c">
-          <ID>Orders</ID>
-          <Name>Orders</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="13382222-5ef0-465e-971b-5bc91a7c2dd4">
-            <DataSourceViewID>Hurtownie Danych20 04</DataSourceViewID>
-            <TableID>dbo_orders</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
       <ID>Orderlines</ID>
       <Partitions>
         <Partition dwd:design-time-name="2bbc73ca-72ee-4cc0-9702-5353f2011b4c">
@@ -74,26 +14,6 @@
           <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca253791-2e94-40a0-b33c-c1d5a3150dfe">
             <DataSourceViewID>Hurtownie Danych20 04</DataSourceViewID>
             <TableID>dbo_orderlines</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
-      <ID>Dates</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="e9680fbd-b8f6-44b8-bca0-ff424ab43f24">
-          <ID>Dates</ID>
-          <Name>Dates</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2024b274-01b8-4549-a64f-60301782eb97">
-            <DataSourceViewID>Hurtownie Danych20 04</DataSourceViewID>
-            <TableID>dbo_dates</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
