@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7559" scrolltop="-1583" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="87" x="21511" y="12462" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7559" scrolltop="-1583" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="87" x="21511" y="11245" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -320,7 +320,7 @@
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="d375749d-94dc-482d-8e6d-7b5c77c6012b">
+        <Hierarchy dwd:design-time-name="72e94663-8e1b-4870-bdd5-db27b68e60c8">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
@@ -545,16 +545,122 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="599c1e46-c284-4357-9b38-4624ff2f3466">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b6cfa0b5-eff8-4d10-bbf1-faa35f2b7048">
           <CubeDimensionID>Orders - Orderdateid</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="fda1e1dd-1487-42e7-a517-5b67c6a4daee">
+            <Attribute dwd:design-time-name="ce70f29a-376c-443c-b002-dae3dc03cfca">
               <AttributeID>Date Id</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
           </Attributes>
           <IntermediateCubeDimensionID>Orders</IntermediateCubeDimensionID>
           <IntermediateGranularityAttributeID>Orderdateid</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="18b63c0a-a921-42c4-a8d6-c30ce51da33b">
+      <ID>Orders</ID>
+      <Name>Orders</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dfdea1b7-7968-4e58-802c-43f44dfa8672">
+          <ID>Totalamount</ID>
+          <Name>Totalamount</Name>
+          <Source dwd:design-time-name="84f3ecd4-d8af-452e-b63c-c87e0d4d1ac4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cc0272f7-06d6-4dc7-8851-6a2fec23e4b5">
+              <TableID>dbo_orders</TableID>
+              <ColumnID>totalamount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cfccbe6c-2f8b-4e1d-8b68-b694560816c8">
+          <ID>Orders Count</ID>
+          <Name>Orders Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c806549a-ef54-47ff-a0d3-28c16197aef1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f628d578-c3b1-4cae-8aff-18c5c2c03e4c">
+              <TableID>dbo_orders</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7967777f-9267-4d78-9d62-8956e62bec11">
+          <CubeDimensionID>Orders</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1a7ee13e-97ac-4725-91af-ceb3f18f8b78">
+              <AttributeID>Orderid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aa3c5385-9de8-4acb-966e-7da1e3d2810e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1be1e1ef-6e9e-44f6-982f-a62f33b9a557">
+                    <TableID>dbo_orders</TableID>
+                    <ColumnID>orderid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfda027b-a6b0-4f1a-a197-cbcfd1aca0c5">
+          <CubeDimensionID>Orderdateid</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b4e969e-a159-49e4-9027-30015294f427">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1da7dd4f-2ad9-4d6c-9c15-9d36e106b52b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e1803fa6-2d94-4b24-981c-3975aa47a0ab">
+                    <TableID>dbo_orders</TableID>
+                    <ColumnID>orderdateid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b0e54132-d166-42b2-aadd-23a8ba296b93">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="11a38a2b-252f-4ca3-b9cd-5f1ce57a6cac">
+              <AttributeID>Customerid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9e1ad8dc-b8dc-43ed-b46b-3373392d4b99">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0943cf45-77ef-4f5c-95e6-96b0549feb16">
+                    <TableID>dbo_orders</TableID>
+                    <ColumnID>customerid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7d899647-a1b3-44e5-86a4-65e5e58caa5d">
+          <CubeDimensionID>Orders - Orderdateid</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83af6daa-4d73-4186-a540-837d1cc38281">
+              <AttributeID>Date Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Orderdateid</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Date Id</IntermediateGranularityAttributeID>
           <Materialization>Regular</Materialization>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
         </Dimension>
@@ -579,11 +685,47 @@ If the CALCULATE command is deleted or modified, the data within the cube is aff
 You should edit this command only if you manually specify how the cube is aggregated.
 */
 CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[sredni wartosc sprzedazy]
+ AS [Measures].[Totalamount]/ [Measures].[Orderlines Count], 
+VISIBLE = 1  ;  
 CREATE MEMBER CURRENTCUBE.[Measures].[srednia sprz]
  AS [Measures].[Quantity] / [Measures].[Orderlines Count], 
-VISIBLE = 1  ; </Text>
+VISIBLE = 1; </Text>
         </Command>
       </Commands>
     </MdxScript>
   </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="89d58b23-5d28-45e1-877a-3ec141a6ea79">
+      <ID>KPI</ID>
+      <Name>SredniaWartSprzedazy</Name>
+      <AssociatedMeasureGroupID>Orders</AssociatedMeasureGroupID>
+      <Value>[Measures].[Totalamount]/[Measures].[Orders Count]</Value>
+      <Goal>Case
+    When [Customer].[Country]
+        Is [Customer].[Country].&amp;[US]
+        THEN 220
+    Else 200
+End</Goal>
+      <Status>Case
+    When KpiValue("SredniaWartSprzedazy") / KpiGoal("SredniaWartSprzedazy") &gt; .90
+        Then 1
+    When KpiValue("SredniaWartSprzedazy") / KpiGoal("SredniaWartSprzedazy") &lt;= .90
+        And KpiValue("SredniaWartSprzedazy") / KpiGoal("SredniaWartSprzedazy") &gt; .80
+        Then 0
+    Else
+        -1
+End</Status>
+      <Trend>Case
+  When [Measures].[Totalamount]/[Measures].[Orders Count] &gt;
+    (ParallelPeriod([Order Data].[Month].[Month],
+      1, [Order Data].[Month].CurrentMember))
+    Then 1
+Else
+    -1
+End</Trend>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Traffic Light</StatusGraphic>
+    </Kpi>
+  </Kpis>
 </Cube>
