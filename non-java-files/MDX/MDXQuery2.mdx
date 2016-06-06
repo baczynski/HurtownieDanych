@@ -1,0 +1,23 @@
+SELECT 
+[Order Data].[Month].Members ON COLUMNS,
+[Measures].[Orders Count] ON ROWS
+FROM [Hurtownie Danych20 04];
+
+
+SELECT
+[Customer].[Country].Members ON COLUMNS,
+[Orderline Data].[Month].Members ON ROWS
+FROM [Hurtownie Danych20 04]
+WHERE [Measures].[Orderlines Count];
+
+SELECT
+[Customer].[Country].Members ON COLUMNS,
+Crossjoin([Orderline Data].[Month].Members, [Products].[Category].Members) ON ROWS
+FROM [Hurtownie Danych20 04]
+WHERE [Measures].[Orderlines Count];
+
+SELECT 
+[Customer].[Country].Members ON COLUMNS,
+NonEmpty(Crossjoin(Crossjoin([Orderline Data].[Year].Members, [Orderline Data].[Month].Members),[Orderline Data].[Day].Members)) ON ROWS
+FROM [Hurtownie Danych20 04]
+WHERE [Measures].[Orderlines Count];
